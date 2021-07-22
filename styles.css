@@ -1,3 +1,27 @@
+html {
+  min-block-size: 100%;
+}
+
 body {
-  background: orange;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  word-break: keep-all;
+  hyphens: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-size: 16px;
+  text-align: center;
+}
+
+body {
+  background-color: hsl(34, 94%, 83%);
+}
+
+header {
+  margin-top: 5%;
+  border: 3px dotted hsl(234, 94%, 83%);
 }
