@@ -29,4 +29,46 @@ const size = 30;
 drawCircle(x, y, size);
 
 // Add your code here
-let move = document.querySelector('canvas')
+let move = document.querySelector('canvas');
+move.addEventListener('keydown', event => {
+  const keyName = event.key;
+  switch (keyName) {
+    case 'w':
+      y -= 5;
+      if (y < size) {
+        y = size;
+      }
+      drawCircle(x, y, size);
+      break;
+    case 'a':
+      x -= 5;
+      if (x < size) {
+        x = size;
+      }
+      drawCircle(x, y, size);
+      break;
+    case 's':
+      y += 5;
+      if (y > canvas.height - size) {
+        y = canvas.height - size;
+      }
+      drawCircle(x, y, size);
+      break;
+    case 'd':
+      x += 5;
+      if (x > canvas.width - size) {
+        x = canvas.width - size;
+      }
+      drawCircle(x, y, size);
+      break;
+    default:
+      break;
+  }
+});
+
+// MDN JavaScript Events Assessment 3
+let buttonBar = document.querySelector('.button-bar');
+let color;
+
+let redBtn = document.querySelector('.red');
+let yellowBtn = document.querySelector('.yellow');

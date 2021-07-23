@@ -24,7 +24,7 @@ body {
 header {
   text-align: center;
   margin-top: 5%;
-  border: 3px dotted hsl(234, 94%, 83%);
+  border: 3px ridge hsl(234, 94%, 83%);
 }
 
 p {
@@ -37,9 +37,26 @@ button {
   margin: 20px 0 20px 20px;
 }
 
+.button-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  padding: 20px 0;
+  border: 2px inset black;
+}
+
 .assessment1 {
   margin: 5% auto;
   border: 2px solid black;
+}
+
+.assessment2 {
+  display: flex;
+  /* border: 2px solid black; */
+  min-inline-size: 100%;
+  justify-content: center;
+  align-content: center;
 }
 
 .assessment2 > canvas {
