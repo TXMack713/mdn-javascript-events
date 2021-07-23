@@ -14,7 +14,7 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   font-size: 16px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 body {
@@ -22,6 +22,27 @@ body {
 }
 
 header {
+  text-align: center;
   margin-top: 5%;
   border: 3px dotted hsl(234, 94%, 83%);
+}
+
+p {
+  color: purple;
+  margin: 0.5em 0;
+}
+
+button {
+  display: block;
+  margin: 20px 0 20px 20px;
+}
+
+.assessment1 {
+  margin: 5% auto;
+  border: 2px solid black;
+}
+
+.assessment2 > canvas {
+  margin: 5% auto;
+  border: 2px solid black;
 }

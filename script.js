@@ -1,4 +1,5 @@
-const btn = document.querySelector('button');
+// MDN JavaScript Events Exercises
+const btn = document.querySelector('.color');
 
 function random(number) {
   return Math.floor(Math.random() * number);
@@ -19,4 +20,4 @@ function bgChange() {
 btn.addEventListener('click', bgChange);
 
 // btn.onclick = bgChange;
-btn.addEventListener('click', bgChange);
+// btn.addEventListener('click', bgChange);
