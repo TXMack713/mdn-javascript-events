@@ -70,5 +70,23 @@ move.addEventListener('keydown', event => {
 let buttonBar = document.querySelector('.button-bar');
 let color;
 
-let redBtn = document.querySelector('.red');
-let yellowBtn = document.querySelector('.yellow');
+let redBtn = document.querySelector('[data-color=red]');
+let yellowBtn = document.querySelector('[data-color=yellow]');
+let greenBtn = document.querySelector('[data-color=green]');
+let purpleBtn = document.querySelector('[data-color=purple]');
+
+redBtn.addEventListener('click', () => {
+  color = 'red';
+});
+
+yellowBtn.addEventListener('click', () => {
+  color = 'yellow';
+});
+
+greenBtn.addEventListener('click', () => {
+  color = 'green';
+});
+
+purpleBtn.addEventListener('click', () => {
+  color = 'purple';
+});
