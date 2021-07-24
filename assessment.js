@@ -98,3 +98,4 @@ buttonBar.addEventListener('click', () => {
     elements[i].style.backgroundColor = color;
   }
 });
+  
