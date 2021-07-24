@@ -90,3 +90,5 @@ greenBtn.addEventListener('click', () => {
 purpleBtn.addEventListener('click', () => {
   color = 'purple';
 });
+
+document.getElementsByClassName('.burron-bar').style.backgroundColor = color;
